@@ -72,10 +72,10 @@ export default {
     };
   },
   mounted() {
-    this.getUsers();
+    this.fetch();
   },
   methods: {
-    getUsers() {
+    fetch() {
       if (this.$route.params.id) {
         let id = this.$route.params.id;
         http
